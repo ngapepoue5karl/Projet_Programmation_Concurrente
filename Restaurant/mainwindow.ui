@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1841</width>
+    <height>806</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="Projet">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1511</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame  {  
+	
+	
+	background-color: rgb(181, 181, 181);
+border :2px solid  rgb(85, 0, 0) ;
+border-radius : 20px;
+}
+QLabel{
+border :0px;
+}
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QFrame" name="Suivi_cuisine">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>151</width>
+       <height>591</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/newPrefix/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/recette.jpg);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>300</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>INGREDIENTS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>RECETTES</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>131</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>KOKI</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QListWidget" name="listWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>320</y>
+        <width>131</width>
+        <height>231</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Suivi_global">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>670</y>
+       <width>1161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>NOMBRE DE COMMANDES :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>10</y>
+        <width>201</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>OCCUPATION DES TABLES :</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdNumber">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>10</y>
+        <width>64</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdNumber_2">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>40</y>
+        <width>64</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>40</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>EN ATTENTE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>10</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>SERVIES</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>10</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>DE 2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>40</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>DE 8</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>10</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>DE 6</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>40</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>DE 4</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdNumber_3">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>10</y>
+        <width>64</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdNumber_4">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>40</y>
+        <width>64</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdNumber_5">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>10</y>
+        <width>64</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdNumber_6">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>40</y>
+        <width>64</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Suivi_restaurant">
+     <property name="geometry">
+      <rect>
+       <x>1340</x>
+       <y>80</y>
+       <width>161</width>
+       <height>581</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/newPrefix/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/menu.jpg);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>MENU</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>250</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>COUVERTS</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>141</width>
+        <height>221</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>141</width>
+        <height>291</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>230</y>
+       <width>120</width>
+       <height>80</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QFrame" name="Restaurant">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>80</y>
+       <width>1161</width>
+       <height>581</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QFrame" name="Salle_de_restauration">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>0</y>
+        <width>591</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/newPrefix/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/sol_cuisine.jpg);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QFrame" name="Cuisine">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>551</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/newPrefix/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/sol_cuisine.jpg);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>10</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/newPrefix/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/music_pause_stop_control_icon_229126.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>10</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/newPrefix/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/arrow_forward_right_fast_icon_229133.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>10</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/newPrefix/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/video_music_player_play_icon_229094.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>10</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/newPrefix/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/control-stop_icon-icons.com_66496.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>60</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe Script&quot;;</string>
+     </property>
+     <property name="text">
+      <string>START</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>60</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe Script&quot;;</string>
+     </property>
+     <property name="text">
+      <string>PAUSE</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>60</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe Script&quot;;</string>
+     </property>
+     <property name="text">
+      <string>SPEED</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>60</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe Script&quot;;</string>
+     </property>
+     <property name="text">
+      <string>STOP</string>
+     </property>
+    </widget>
+    <widget class="QTimeEdit" name="Timer">
+     <property name="geometry">
+      <rect>
+       <x>1370</x>
+       <y>30</y>
+       <width>118</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1841</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="asset.qrc"/>
+ </resources>
+ <connections/>
+</ui>

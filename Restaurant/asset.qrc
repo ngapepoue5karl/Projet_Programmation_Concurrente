@@ -1,0 +1,48 @@
+<RCC>
+  <qresource>
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/debug/Assets/sol_cuisine.jpg</file>
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/WhatsApp Image 2024-10-03 at 14.55.42_909370de.jpg</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/control-stop_icon-icons.com_66496.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/foyer.jpg</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/arrow_forward_right_fast_icon_229133.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/left_backward_arrow_rewind_icon_229107.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/music_pause_stop_control_icon_229126.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/video_music_player_play_icon_229094.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/1486504364-chapter-controls-forward-play-music-player-video-player-next_81300.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/1486486316-arrow-film-movie-play-player-start-video_81236.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/salle.jpg</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/menu.jpg</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/recette.jpg</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/restaurant.jpg</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/cuisine.jpg</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Assets/sol_cuisine.jpg</file>
+  </qresource>
+</RCC>
